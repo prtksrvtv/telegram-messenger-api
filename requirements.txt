@@ -2,4 +2,4 @@ requests
 flask
 flask_restful
 gunicorn
-dotenv
+python-dotenv
