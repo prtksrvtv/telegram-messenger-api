@@ -32,5 +32,5 @@ api.add_resource(check, '/check')
 
 if __name__ == '__main__': 
   
-    app.run(debug = True, host='127.1.1.2', port=8081) #this is for local dev
-    #app.run(debug = True) #this is for cloud run
+    #app.run(debug = True, host='127.1.1.2', port=8081) #this is for local dev
+    app.run(debug = True) #this is for cloud run
