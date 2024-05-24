@@ -1,6 +1,5 @@
 import requests
 import os
-import json
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api 
