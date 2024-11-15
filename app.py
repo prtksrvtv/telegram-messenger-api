@@ -22,11 +22,11 @@ class telegram(Resource):
         chat_id = os.environ['CHAT_ID']
         url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
         requests.get(url).json() # this sends the message
-        return jsonify({'message':message}), 200
+        return jsonify({'message':message})
 
 class check(Resource):
     def get(self):
-        return jsonify({'status': 200}), 200
+        return jsonify({'status': 200})
       
 api.add_resource(telegram, '/') 
 api.add_resource(check, '/check')
